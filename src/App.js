@@ -1,25 +1,50 @@
-import logo from './logo.svg';
+import { createBrowserRouter,Outlet,RouterProvider} from 'react-router-dom';
+import ReactDOM from 'react-dom/client';
 import './App.css';
+import Header from './Components/Header';
+import Blogs from './Components/Blogs';
+import Error from './Components/Error';
+import About from './Components/About';
+import { Suspense } from 'react';
+import Body from './Components/Body';
 
-function App() {
+const AppLayout = () =>{
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <Outlet/>
     </div>
   );
 }
 
-export default App;
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <AppLayout/>,
+    children: [
+      {
+        path: "/",
+        element: <Body/>
+      },
+      {
+        path: "/blogs",
+        element: <Blogs/>
+      },
+      {
+        path: "/aboutus",
+        element: (
+          <Suspense fallback={<h1>Loading...</h1>}>
+            <About/>
+          </Suspense>
+        )
+      }
+    ],
+    errorElement: <Error/>
+  }
+]);
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(<RouterProvider router={appRouter}/>);
+
+export default AppLayout;
