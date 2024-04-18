@@ -24,9 +24,9 @@ const Footer = () => {
                     <a href="https://www.facebook.com/immunnapandit/" target="_blank" rel="noopener noreferrer"><FaFacebook style={{ color: "#1877f2" }} /></a>
                     <a href="https://twitter.com/immunnapandit/" target="_blank" rel="noopener noreferrer"><FaTwitter style={{ color: "#1da1f2" }} /></a>
                     <a href="https://www.instagram.com/immunnapandit/" target="_blank" rel="noopener noreferrer"><FaInstagram style={{ color: "#c13584" }} /></a>
-                    <a href="https://www.snapchat.com/immunnapandit/" target="_blank" rel="noopener noreferrer"><FaSnapchat style={{ color: "#fffc00" }} /></a>
-                    <a href="https://www.youtube.com/@technicalmunnapandit" target="_blank" rel="noopener noreferrer"><FaYoutube style={{ color: "#ff0000" }} /></a>
-                    <a href="https://medium.com/immunnapandit" target="_blank" rel="noopener noreferrer"><FaMedium style={{ color: "#12100e" }} /></a>
+                    <a href="https://www.snapchat.com/immunnapandit" target="_blank" rel="noopener noreferrer"><FaSnapchat style={{ color: "#fffc00" }} /></a>
+                    <a href="https://www.youtube.com/@technicalmunnapandit/" target="_blank" rel="noopener noreferrer"><FaYoutube style={{ color: "#ff0000" }} /></a>
+                    <a href="https://medium.com/@immunnapandit/" target="_blank" rel="noopener noreferrer"><FaMedium style={{ color: "#12100e" }} /></a>
                 </IconContext.Provider>
             </div>
         </footer>
