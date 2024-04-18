@@ -10,6 +10,7 @@ import Footer from './Components/Footer';
 import CookiePolicy from './Components/CookiePolicy';
 import Privacy from './Components/PrivacyPolicy';
 import Memories from './Components/Memories';
+import Contact from './Components/Contact';
 
 const AppLayout = () =>{
   return (
@@ -50,6 +51,10 @@ const appRouter = createBrowserRouter([
         path: "/cookiepolicy",
         element: <CookiePolicy/>
       },
+      {
+        path: "/contactus",
+        element: <Contact/>
+      }
     ],
     errorElement: <Error/>
   }

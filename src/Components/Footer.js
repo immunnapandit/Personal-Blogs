@@ -12,6 +12,8 @@ const Footer = () => {
                     <li className="px-4">
                         <Link to="/cookiepolicy" className="hover:text-blue-900">Cookie Policy</Link>
                     </li>
+                    <li className="px-4"></li>
+                    <Link to="/contactus">Contact Us</Link>
                 </ul>
             </div>
         </footer>
