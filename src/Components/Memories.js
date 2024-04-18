@@ -13,22 +13,22 @@ const Memories = () => {
                 <h1 className="text-3xl md:text-5xl text-center mb-20">My Memories</h1>
                 <div className="flex flex-wrap justify-between">
                     <figure className="w-full md:w-1/2 lg:w-1/3 card mb-8 md:mb-0 transform transition-transform hover:scale-103 hover:shadow-md px-4">
-                        <img src={munnaImage} alt="memoriesphoto" className="w-full h-full object-cover filter drop-shadow-lg" />
+                        <img src={munnaImage} alt="memoriesphoto" className="w-full h-full object-cover filter drop-shadow-lg py-3" />
                     </figure>
                     <figure className="w-full md:w-1/2 lg:w-1/3 card mb-8 md:mb-0 transform transition-transform hover:scale-103 hover:shadow-md px-4">
-                        <img src={mumbaiImage} alt="memories" className="w-full h-full object-cover filter drop-shadow-lg" />
+                        <img src={mumbaiImage} alt="memories" className="w-full h-full object-cover filter drop-shadow-lg py-3" />
                     </figure>
                     <figure className="w-full md:w-1/2 lg:w-1/3 card mb-8 md:mb-0 transform transition-transform hover:scale-103 hover:shadow-md px-4">
-                        <img src={officeImage} alt="memories" className="w-full h-full object-cover filter drop-shadow-lg" />
+                        <img src={officeImage} alt="memories" className="w-full h-full object-cover filter drop-shadow-lg py-3" />
                     </figure>
                     <figure className="w-full md:w-1/2 lg:w-1/3 card mb-8 md:mb-0 transform transition-transform hover:scale-103 hover:shadow-md px-4">
-                        <img src={resImage} alt="memories" className="w-full h-full object-cover filter drop-shadow-lg" />
+                        <img src={resImage} alt="memories" className="w-full h-full object-cover filter drop-shadow-lg py-3" />
                     </figure>
                     <figure className="w-full md:w-1/2 lg:w-1/3 card mb-8 md:mb-0 transform transition-transform hover:scale-103 hover:shadow-md px-4">
-                        <img src={collegeImages} alt="memories" className="w-full h-full object-cover filter drop-shadow-lg" />
+                        <img src={collegeImages} alt="memories" className="w-full h-full object-cover filter drop-shadow-lg py-3" />
                     </figure>
                     <figure className="w-full md:w-1/2 lg:w-1/3 card mb-8 md:mb-0 transform transition-transform hover:scale-103 hover:shadow-md px-4">
-                        <img src={stationImages} alt="memories" className="w-full h-full object-cover filter drop-shadow-lg" />
+                        <img src={stationImages} alt="memories" className="w-full h-full object-cover filter drop-shadow-lg py-3" />
                     </figure>
                 </div>
             </div>
