@@ -40,6 +40,10 @@ const appRouter = createBrowserRouter([
         element: <About/>
       },
       {
+        path: "/contactus",
+        element: <Contact/>
+      },
+      {
         path: "memories",
         element: <Memories/>
       },
@@ -51,10 +55,6 @@ const appRouter = createBrowserRouter([
         path: "/cookiepolicy",
         element: <CookiePolicy/>
       },
-      {
-        path: "/contactus",
-        element: <Contact/>
-      }
     ],
     errorElement: <Error/>
   }

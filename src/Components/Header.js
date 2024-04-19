@@ -31,6 +31,9 @@ const Header = () => {
                             <Link to="/aboutus" className="hover:text-blue-900" onClick={() => setIsMenuOpen(false)}>About Us</Link>
                         </li>
                         <li className="mb-4">
+                            <Link to="/contactus" className="hover:text-blue-900" onClick={()=> setIsMenuOpen(false)}>Contact Us</Link>
+                        </li>
+                        <li className="mb-4">
                             <Link to="/memories" className="hover:text-blue-900" onClick={() => setIsMenuOpen(false)}>Memories</Link>
                         </li>
                     </ul>
@@ -45,6 +48,9 @@ const Header = () => {
                         </li>
                         <li className="px-4">
                             <Link to="/aboutus" className="hover:text-blue-900">About Us</Link>
+                        </li>
+                        <li className="px-4">
+                            <Link to="/contactus" className="hover:text-blue-900">Contact Us</Link>
                         </li>
                         <li className="px-4">
                             <Link to="/memories" className="hover:text-blue-900">Memories</Link>
