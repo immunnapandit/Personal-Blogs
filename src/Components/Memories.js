@@ -4,7 +4,10 @@ import mumbaiImage from "../assets/munna1.jpeg";
 import officeImage from "../assets/munna2.jpeg";
 import resImage from "../assets/munna3.jpeg";
 import collegeImages from "../assets/munna4.jpeg";
+import friendsImage from "../assets/munna5.jpeg";
 import stationImages from "../assets/munna6.jpeg";
+import ColllegeImages from "../assets/munna9.jpeg";
+import gauravfriends from "../assets/munna7.jpeg";
 
 const Memories = () => {
     return (
@@ -29,6 +32,15 @@ const Memories = () => {
                     </figure>
                     <figure className="w-full md:w-1/2 lg:w-1/3 card mb-8 md:mb-0 transform transition-transform hover:scale-103 hover:shadow-md px-4">
                         <img src={stationImages} alt="memories" className="w-full h-full object-cover filter drop-shadow-lg py-3" />
+                    </figure>
+                    <figure className="w-full md:w-1/2 lg:w-1/3 card mb-8 md:mb-0 transform transition-transform hover:scale-103 hover:shadow-md px-4">
+                        <img src={friendsImage} alt="memories" className=""></img>
+                    </figure>
+                    <figure className="w-full md:w-1/2 lg:w-1/3 card mb-8 md:mb-0 transform transition-transform hover:scale-103 hover:shadow-md px-4">
+                        <img src={ColllegeImages} alt="memories" className="h-full"></img>
+                    </figure>
+                    <figure className="w-full md:w-1/2 lg:w-1/3 card mb-8 md:mb-0 transform transition-transform hover:scale-103 hover:shadow-md px-4">
+                        <img src={gauravfriends} alt="memories" className="h-full"></img>
                     </figure>
                 </div>
             </div>
