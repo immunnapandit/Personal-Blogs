@@ -37,11 +37,12 @@ const Memories = () => {
                         <img src={friendsImage} alt="memories" className=""></img>
                     </figure>
                     <figure className="w-full md:w-1/2 lg:w-1/3 card mb-8 md:mb-0 transform transition-transform hover:scale-103 hover:shadow-md px-4">
-                        <img src={ColllegeImages} alt="memories" className="h-full"></img>
-                    </figure>
-                    <figure className="w-full md:w-1/2 lg:w-1/3 card mb-8 md:mb-0 transform transition-transform hover:scale-103 hover:shadow-md px-4">
-                        <img src={gauravfriends} alt="memories" className="h-full"></img>
-                    </figure>
+    <img src={ColllegeImages} alt="memories" className="h-full w-full object-cover"></img>
+</figure>
+<figure className="w-full md:w-1/2 lg:w-1/3 card mb-8 md:mb-0 transform transition-transform hover:scale-103 hover:shadow-md px-4">
+    <img src={gauravfriends} alt="memories" className="h-full w-full object-cover"></img>
+</figure>
+
                 </div>
             </div>
         </div>
