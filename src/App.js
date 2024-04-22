@@ -12,6 +12,7 @@ import Privacy from './Components/PrivacyPolicy';
 import Memories from './Components/Memories';
 import Contact from './Components/Contact';
 
+
 const AppLayout = () =>{
   return (
     <div className="App">
@@ -55,10 +56,13 @@ const appRouter = createBrowserRouter([
         path: "/cookiepolicy",
         element: <CookiePolicy/>
       },
+      
     ],
     errorElement: <Error/>
   }
 ]);
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
