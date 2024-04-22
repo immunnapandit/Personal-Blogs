@@ -4,10 +4,10 @@ const Blogs = () => {
     // Sample list of blog posts
     const blogPosts = [
         {
-            title: "First Blog Post",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-            author: "Your Name",
-            date: "April 20, 2024"
+            title: "How to Link PAN to Aadhaar",
+            content: "A Step-by-Step Guide to Linking PAN Card with Aadhaar Card Mehods to Link to Aadhar               ",
+            author: "techwithmunna",
+            date: "April 22, 2024"
         },
         {
             title: "Second Blog Post",
