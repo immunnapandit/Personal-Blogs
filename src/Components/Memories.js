@@ -8,6 +8,13 @@ import friendsImage from "../assets/munna5.jpeg";
 import stationImages from "../assets/munna6.jpeg";
 import ColllegeImages from "../assets/munna9.jpeg";
 import gauravfriends from "../assets/munna7.jpeg";
+import rajabhoj from "../assets/rajabhoj.jpeg"
+import rajabhoj1 from "../assets/rajabhoj1.jpeg"
+import mahakal from "../assets/mahakal.jpeg"
+import juhubeach from "../assets/juhubeach.jpeg"
+import juhubeach1 from "../assets/juhubeach1.jpeg"
+import sky from "../assets/sky.jpeg";
+
 
 const Memories = () => {
     return (
@@ -41,6 +48,24 @@ const Memories = () => {
                     </figure>
                     <figure className="w-full md:w-1/2 lg:w-1/3 card mb-8 md:mb-0 transform transition-transform hover:scale-103 hover:shadow-md px-4">
                         <img src={gauravfriends} alt="memories" className="h-full w-full object-cover"></img>
+                    </figure>
+                    <figure className="w-full md:w-1/2 lg:w-1/3 card mb-8 md:mb-0 transform transition-transform hover:scale-103 hover:shadow-md px-4">
+                        <img src={rajabhoj} alt="memories" className="h-full w-full object-cover"></img>
+                    </figure>
+                    <figure className="w-full md:w-1/2 lg:w-1/3 card mb-8 md:mb-0 transform transition-transform hover:scale-103 hover:shadow-md px-4">
+                        <img src={rajabhoj1} alt="memories" className="h-full w-full object-cover"></img>
+                    </figure>
+                    <figure className="w-full md:w-1/2 lg:w-1/3 card mb-8 md:mb-0 transform transition-transform hover:scale-103 hover:shadow-md px-4">
+                        <img src={mahakal} alt="memories" className="h-full w-full object-cover"></img>
+                    </figure>
+                    <figure className="w-full md:w-1/2 lg:w-1/3 card mb-8 md:mb-0 transform transition-transform hover:scale-103 hover:shadow-md px-4">
+                        <img src={juhubeach} alt="memories" className="h-full w-full object-cover"></img>
+                    </figure>
+                    <figure className="w-full md:w-1/2 lg:w-1/3 card mb-8 md:mb-0 transform transition-transform hover:scale-103 hover:shadow-md px-4">
+                        <img src={juhubeach1} alt="memories" className="h-full w-full object-cover"></img>
+                    </figure>
+                    <figure className="w-full md:w-1/2 lg:w-1/3 card mb-8 md:mb-0 transform transition-transform hover:scale-103 hover:shadow-md px-4">
+                        <img src={sky} alt="memories" className="h-full w-full object-cover"></img>
                     </figure>
                 </div>
             </div>
