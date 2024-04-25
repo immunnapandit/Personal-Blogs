@@ -27,7 +27,7 @@ const images = [
     { src: juhubeach, info: "Juhu Beach Mumbai" },
     { src: juhubeach1, info: "Juhu Beach Mumbai" },
     { src: ColllegeImages, info: "College Friends" },
-    { src: gauravfriends, info: "Frineds Gaurav" },
+    { src: gauravfriends, info: "Friends Gaurav" },
     { src: rajabhoj, info: "Friends Vansh" },
     { src: rajabhoj1, info: "Raja Bhoj Setu in Bhopal" },
     { src: mahakal, info: "Ujjain Mahakal Mandir" },
