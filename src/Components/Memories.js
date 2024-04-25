@@ -21,7 +21,7 @@ const images = [
     { src: mumbaiImage, info: "Juhu Beach Mumbai"},
     { src: officeImage, info: "In Office" },
     { src: resImage, info: "In Restaurant" },
-    { src: collegeImages, info: "College image" },
+    { src: collegeImages, info: "Raja Bhoj Setu in Bhopal" },
     { src: stationImages, info: "Ranikamlapti Railway Station" },
     { src: sky, info: "Juhu Beach Mumbai" },
     { src: juhubeach, info: "Juhu Beach Mumbai" },
