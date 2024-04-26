@@ -32,9 +32,9 @@ const Header = () => {
                         <li className="mb-4">
                             <Link to="/" className="hover:text-blue-900" onClick={closeMenu}>Home</Link>
                         </li>
-                        <li className="mb-4">
+                        {/* <li className="mb-4">
                             <Link to="/blogs" className="hover:text-blue-900" onClick={closeMenu}>Blogs</Link>
-                        </li>
+                        </li> */}
                         <li className="mb-4">
                             <Link to="/aboutus" className="hover:text-blue-900" onClick={closeMenu}>About Us</Link>
                         </li>
@@ -52,9 +52,9 @@ const Header = () => {
                         <li className="px-4">
                             <Link to="/" className="hover:text-blue-900">Home</Link>
                         </li>
-                        <li className="px-4">
+                        {/* <li className="px-4">
                             <Link to="/blogs" className="hover:text-blue-900">Blogs</Link>
-                        </li>
+                        </li> */}
                         <li className="px-4">
                             <Link to="/aboutus" className="hover:text-blue-900">About Us</Link>
                         </li>

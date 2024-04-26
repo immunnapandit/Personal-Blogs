@@ -2,7 +2,7 @@ import { createBrowserRouter,Outlet,RouterProvider} from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 import './App.css';
 import Header from './Components/Header';
-import Blogs from './Components/Blogs';
+// import Blogs from './Components/Blogs';
 import Error from './Components/Error';
 import About from './Components/About';
 import Body from './Components/Body';
@@ -32,10 +32,10 @@ const appRouter = createBrowserRouter([
         path: "/",
         element: <Body/>
       },
-      {
-        path: "/blogs",
-        element: <Blogs/>
-      },  
+      // {
+      //   path: "/blogs",
+      //   element: <Blogs/>
+      // },  
       {
         path: "/aboutus",
         element: <About/>
