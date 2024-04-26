@@ -15,6 +15,12 @@ import juhubeach from "../assets/juhubeach.jpeg";
 import juhubeach1 from "../assets/juhubeach1.jpeg";
 import sky from "../assets/sky.jpeg";
 import swimming from "../assets/swimming.jpeg";
+import swimming11 from "../assets/swimming11.jpeg"
+import vipinfriends from "../assets/vipinfriends.jpeg"
+import vipinfriends1 from "../assets/vipinfriends1.jpeg"
+import pratikfriends from "../assets/pratikfriends.jpeg"
+import collegefriendsv from "../assets/collegefriendsv.jpeg"
+import rakeshfriends from "../assets/rakeshfriends.jpeg"
 
 const images = [
     { src: munnaImage, info: "DB City Mall Bhopal" },
@@ -33,6 +39,13 @@ const images = [
     { src: mahakal, info: "Ujjain Mahakal Mandir" },
     { src: friendsImage, info: "Friends Gaurav and Pratik" },
     { src: swimming, info: "With Village friends" },
+    { src: swimming11, info: "with village friends"},
+    { src: vipinfriends, info: "friends Mishra ji and Rahul"},
+    { src: vipinfriends1, info: "friends Mishra ji"},
+    { src: pratikfriends, info: "With friends pratik and gaurav"},
+    { src: collegefriendsv, info: "With college friends"},
+    { src: rakeshfriends, info: "With friends Rakesh"}
+
 ];
 
 const Memories = () => {
