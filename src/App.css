@@ -1,0 +1,22 @@
+/* Default light theme styles */
+body {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+  }
+  
+  /* Dark theme styles */
+  body.dark-theme {
+    background-color: #333333; /* Dark background */
+    color: #ffffff; /* White text */
+  }
+  
+  /* Header styles for dark theme */
+  .dark-theme header {
+    background-color: #333333; /* Dark background color for header */
+    color: #ffffff; /* White text color for header */
+  }
+  
+  .dark-theme header a {
+    color: #ffffff; /* White text color for links in header */
+  }
+  
