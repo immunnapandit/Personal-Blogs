@@ -7,7 +7,7 @@ import Error from './Components/Error';
 import About from './Components/About';
 import Body from './Components/Body';
 import Footer from './Components/Footer';
-import CookiePolicy from './Components/CookiePolicy';
+// import CookiePolicy from './Components/CookiePolicy';
 import Privacy from './Components/PrivacyPolicy';
 import Memories from './Components/Memories';
 import Contact from './Components/Contact';
@@ -52,10 +52,10 @@ const appRouter = createBrowserRouter([
         path: "/privacy",
         element: <Privacy/>
       },
-      {
-        path: "/cookiepolicy",
-        element: <CookiePolicy/>
-      },
+      // {
+      //   path: "/cookiepolicy",
+      //   element: <CookiePolicy/>
+      // },
       
     ],
     errorElement: <Error/>
