@@ -1,10 +1,11 @@
 import React from "react";
 import munnaImage from "../assets/munna.jpg";
+import newBackgroundImage from "../assets/backgroundImage.jpg"; // Path to your new background image
 import Services from "./Services";
 
 const Body = () => {
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col" style={{ backgroundImage: `url(${newBackgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '100vh' }}>
             <div className="flex flex-col md:flex-row items-center py-18 m-20">
                 <div className="max-w-sm md:mr-10 mb-10 md:mb-0">
                     <img src={munnaImage} alt="munnaimage" className="w-full rounded-full" />
