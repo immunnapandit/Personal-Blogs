@@ -22,8 +22,6 @@ import pratikfriends from "../assets/pratikfriends.jpeg"
 import collegefriendsv from "../assets/collegefriendsv.jpeg"
 import rakeshfriends from "../assets/rakeshfriends.jpeg"
 
-// import { info } from "autoprefixer";
-
 const images = [
     { src: munnaImage, info: "DB City Mall Bhopal" },
     { src: mumbaiImage, info: "Juhu Beach Mumbai"},
