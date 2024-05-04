@@ -22,6 +22,8 @@ import pratikfriends from "../assets/pratikfriends.jpeg"
 import collegefriendsv from "../assets/collegefriendsv.jpeg"
 import rakeshfriends from "../assets/rakeshfriends.jpeg"
 
+// import { info } from "autoprefixer";
+
 const images = [
     { src: munnaImage, info: "DB City Mall Bhopal" },
     { src: mumbaiImage, info: "Juhu Beach Mumbai"},
@@ -44,7 +46,7 @@ const images = [
     { src: vipinfriends1, info: "friends Mishra ji"},
     { src: pratikfriends, info: "With friends pratik and gaurav"},
     { src: collegefriendsv, info: "With college friends"},
-    { src: rakeshfriends, info: "With friends Rakesh"}
+    { src: rakeshfriends, info: "With friends Rakesh"},
 
 ];
 

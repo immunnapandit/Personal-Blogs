@@ -1,7 +1,6 @@
 import React from "react";
 import munnaImage from "../assets/munna.jpg";
-// import "./Body.css";
-import About from "./About";
+import Services from "./Services";
 
 const Body = () => {
     return (
@@ -19,7 +18,7 @@ const Body = () => {
                 </div>
             </div>
             <div className="flex justify-center">
-                <About/>
+                <Services/>
             </div>
         </div>
     );
