@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
-// const cors = require('cors');
+const cors = require('cors');
 
 const app = express();
 const port = 3001; // Use any port you prefer
@@ -21,11 +21,7 @@ db.connect((err) => {
 });
 
 // Add CORS middleware
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  next();
-});
-
+app.use(cors());
 
 app.use(bodyParser.json());
 
