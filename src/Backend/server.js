@@ -4,7 +4,7 @@ const mysql = require('mysql');
 const cors = require('cors');
 
 const app = express();
-const port = 3001; // Use any port you prefer
+const port = 3001;
 
 const db = mysql.createConnection({
     host: 'localhost',
@@ -22,13 +22,10 @@ db.connect((err) => {
 
 // Use the cors middleware with specific options
 app.use(cors({
-  origin: 'https://techwithmunna.vercel.app',
-  credentials: true,
-  allowedHeaders: ['Content-Type', 'Authorization']
+    origin: 'https://techwithmunna.vercel.app',
+    credentials: true,
+    allowedHeaders: ['Content-Type', 'Authorization']
 }));
-
-// Allow preflight requests
-app.options('*', cors());
 
 app.use(bodyParser.json());
 
