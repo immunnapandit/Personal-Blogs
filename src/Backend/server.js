@@ -22,9 +22,11 @@ db.connect((err) => {
 
 // Use the cors middleware with specific options
 app.use(cors({
-    origin: 'https://techwithmunna.vercel.app', // Replace with your frontend URL
-    optionsSuccessStatus: 200 // Some legacy browsers (IE11, various SmartTVs) choke on 204
+  origin: 'https://techwithmunna.vercel.app',
+  credentials: true,
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
+
 
 app.use(bodyParser.json());
 
