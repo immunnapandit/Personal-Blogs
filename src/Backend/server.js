@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
-const cors = require('cors');
+const cors = require('cors'); // Add this line to import the CORS middleware
 
 const app = express();
 const port = 3001; // Use any port you prefer
@@ -20,12 +20,9 @@ db.connect((err) => {
     console.log('Connected to database');
 });
 
-// Use the cors middleware with specific options
 app.use(cors({
-    origin: 'http://localhost:3000', // Replace with your frontend URL
-    optionsSuccessStatus: 200 // Some legacy browsers (IE11, various SmartTVs) choke on 204
-}));
-
+  origin: 'http://your-frontend-domain.com'
+})); // Add this line to enable CORS for all origins
 app.use(bodyParser.json());
 
 app.post('/submit-form', (req, res) => {
