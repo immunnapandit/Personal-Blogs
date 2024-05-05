@@ -5,6 +5,7 @@ import GraphicDesign from '../assets/GraphicDesign.jpg';
 import Seo from '../assets/SEO.jpg';
 import ResearchDevelopment from '../assets/ResearchDevelopment.jpg';
 import WebDevelopment from '../assets/WebDevelopment.jpg';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
     const services = [
@@ -12,7 +13,8 @@ const Services = () => {
             id: 1,
             url: WebDevelopment,
             title: 'Web Development',
-            description: 'We specialize in creating stunning and functional websites tailored to your business needs.'
+            description: 'We specialize in creating stunning and functional websites tailored to your business needs.',
+            path: '/web-development'
         },
         {
             id: 2,
@@ -51,11 +53,13 @@ const Services = () => {
             <h2 className="text-3xl font-bold text-center mb-8">Our Services</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {services.map((element) => (
-                    <div key={element.id} className="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center">
-                        <img src={element.url} alt={element.title} className="mb-4 rounded-full h-40 w-40 object-cover" />
-                        <h3 className="text-xl font-semibold mb-2">{element.title}</h3>
-                        <p className="text-gray-700 text-center">{element.description}</p>
-                    </div>
+                    <Link key={element.id} to={element.path}>
+                        <div className="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center">
+                            <img src={element.url} alt={element.title} className="mb-4 rounded-full h-40 w-40 object-cover" />
+                            <h3 className="text-xl font-semibold mb-2">{element.title}</h3>
+                            <p className="text-gray-700 text-center">{element.description}</p>
+                        </div>
+                    </Link>
                 ))}
             </div>
         </div>

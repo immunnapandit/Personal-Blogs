@@ -8,6 +8,7 @@ import Body from './Components/Body';
 import Footer from './Components/Footer';
 import Memories from './Components/Memories';
 import Contact from './Components/Contact';
+import WebDevPages from './Components/Pages/WebDevPages';
 
 
 const AppLayout = () =>{
@@ -38,9 +39,13 @@ const appRouter = createBrowserRouter([
         element: <Contact/>
       },
       {
-        path: "memories",
+        path: "/memories",
         element: <Memories/>
       },
+      {
+        path: "/web-development",
+        element: <WebDevPages/>
+      }
       
     ],
     errorElement: <Error/>
