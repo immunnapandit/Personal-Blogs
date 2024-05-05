@@ -1,47 +1,47 @@
 const express = require('express');
-const mysql = require('mysql2');
-
+const bodyParser = require('body-parser');
+const mysql = require('mysql');
+const cors = require('cors');
 
 const app = express();
-const port = 3000;
+const port = 3001; // Use any port you prefer
 
-// MySQL connection
-const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'P@#andit@#001',
-  database: 'contact_form_db'
+const db = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: 'P@#andit@#001',
+    database: 'my_database'
 });
 
-// Connect to MySQL
-connection.connect((err) => {
-  if (err) {
-    console.error('Error connecting to MySQL: ' + err.stack);
-    return;
-  }
-  console.log('Connected to MySQL as id ' + connection.threadId);
-});
-
-// Middleware to parse JSON and form data
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-
-// Route to handle form submissions
-app.post('/submit', (req, res) => {
-  const { name, email, subject, message } = req.body;
-  const sql = 'INSERT INTO messages (name, email, subject, message) VALUES (?, ?, ?, ?)';
-  connection.query(sql, [name, email, subject, message], (err, result) => {
+db.connect((err) => {
     if (err) {
-      console.error('Error inserting message: ' + err.stack);
-      res.status(500).send('Error submitting message');
-      return;
+        throw err;
     }
-    console.log('Message submitted successfully');
-    res.send('Message submitted successfully');
-  });
+    console.log('Connected to database');
 });
 
-// Start the server
+// Use the cors middleware with specific options
+app.use(cors({
+    origin: 'http://localhost:3000', // Replace with your frontend URL
+    optionsSuccessStatus: 200 // Some legacy browsers (IE11, various SmartTVs) choke on 204
+}));
+
+app.use(bodyParser.json());
+
+app.post('/submit-form', (req, res) => {
+    const { name, email, subject, message } = req.body;
+    const sql = 'INSERT INTO contact_form (name, email, subject, message) VALUES (?, ?, ?, ?)';
+    db.query(sql, [name, email, subject, message], (err, result) => {
+        if (err) {
+            console.error('Error inserting into database:', err);
+            res.status(500).json({ error: 'An error occurred while saving data' });
+            return;
+        }
+        console.log('Data inserted into database');
+        res.json({ message: 'Form submitted successfully!' });
+    });
+});
+
 app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+    console.log(`Server running at http://localhost:${port}`);
 });

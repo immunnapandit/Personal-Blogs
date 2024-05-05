@@ -17,11 +17,30 @@ const Contact = () => {
         });
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Handle form submission, e.g., send data to backend
-        console.log(formData);
-    };
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      try {
+          const response = await fetch('http://localhost:3001/submit-form', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(formData),
+          });
+          const data = await response.json();
+          console.log(data); // Log the response from the backend
+          // Reset the form after successful submission
+          setFormData({
+              name: "",
+              email: "",
+              subject: "",
+              message: ""
+          });
+      } catch (error) {
+          console.error('Error:', error);
+      }
+  };
+  
 
     return (
         <div className="max-w-screen-xl mx-auto py-20 flex flex-col md:flex-row items-center">
