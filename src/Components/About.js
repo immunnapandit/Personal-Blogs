@@ -5,7 +5,7 @@ import vision from '../assets/Vision.jpg';
 
 const About = () => {
     return (
-        <div className="container mx-auto px-4 py-8">
+        <div className="container mx-auto px-4 py-8" style={{ fontFamily: '"Roboto", Helvetica, Arial, "DejaVu Sans", "Liberation Sans", Freesans, sans-serif' }}>
             <div className="text-center mb-8 py-7">
                 <h1 className="text-3xl font-bold">About Us</h1>
             </div>
