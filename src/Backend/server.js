@@ -2,15 +2,16 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
 const cors = require('cors');
+require('dotenv').config(); // Load environment variables from .env file
 
 const app = express();
 const port = 3001; // Use any port you prefer
 
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'P@#andit@#001',
-    database: 'my_database'
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DATABASE
 });
 
 db.connect((err) => {
@@ -20,8 +21,11 @@ db.connect((err) => {
     console.log('Connected to database');
 });
 
-// Add CORS middleware
-app.use(cors());
+// Use the cors middleware with specific options
+app.use(cors({
+    origin: 'http://localhost:3000', // Replace with your frontend URL
+    optionsSuccessStatus: 200 // Some legacy browsers (IE11, various SmartTVs) choke on 204
+}));
 
 app.use(bodyParser.json());
 
