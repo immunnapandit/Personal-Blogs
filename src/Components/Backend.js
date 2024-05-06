@@ -7,10 +7,10 @@ const app = express();
 const port = 3001; // Use any port you prefer
 
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'P@#andit@#001',
-    database: 'my_database'
+    // host: 
+    // user: 
+    // password:
+    // database: 
 });
 
 db.connect((err) => {
