@@ -1,10 +1,9 @@
-import React from "react";
 import { IconContext } from "react-icons";
 import { FaFacebook, FaTwitter, FaInstagram, FaSnapchat, FaYoutube, FaMedium } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <footer className="bg-white text-black fixed bottom-0 left-0 right-0 z-10 flex flex-col md:flex-row justify-between items-center h-16 border-t-2 border-gray-200 shadow-md px-4 md:px-6 lg:px-8 text-sm">
+        <footer className="bg-white text-black fixed bottom-0 left-0 right-0 z-10 flex flex-col md:flex-row justify-between items-center h-16 border-t-2 border-gray-200 shadow-md px-4 md:px-6 lg:px-8 text-sm font-sans">
             <div className="flex items-center md:justify-center md:mx-auto md:max-w-6xl">
                 <span className="text-gray-600 mr-4">Follow us:</span>
                 <IconContext.Provider value={{ size: "1.5em", className: "mr-4" }}>

@@ -23,7 +23,8 @@ const Services = () => {
             id: 2,
             url: GraphicDesign,
             title: 'Graphic Design',
-            description: 'Our graphic designers can help you create captivating visuals for your brand.'
+            description: 'Our graphic designers can help you create captivating visuals for your brand.',
+            path: '/graphic-design'
         },
         {
             id: 3,

@@ -9,6 +9,7 @@ import Footer from './Components/Footer';
 import Memories from './Components/Memories';
 import Contact from './Components/Contact';
 import WebDevPages from './Components/Pages/WebDevPages';
+import GraphicDesign from './Components/Pages/GraphicDesign';
 
 
 const AppLayout = () =>{
@@ -45,6 +46,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/web-development",
         element: <WebDevPages/>
+      },
+      {
+        path: "/graphic-design",
+        element: <GraphicDesign/>
       }
       
     ],
