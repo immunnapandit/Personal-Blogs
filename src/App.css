@@ -17,22 +17,15 @@ body {
   }
   
   .dark-theme header a {
-    color: #ffffff; /* White text color for links in header */
+    color: #ffffff; 
   }
   
-  /* Assuming you have imported the Poppins font */
+ 
 
 .services {
-  font-family: 'Poppins', sans-serif; /* Use the Poppins font with a fallback of sans-serif */
+  font-family: 'Poppins', sans-serif; 
 }
 
 .services h2 {
-  font-family: 'Poppins', sans-serif; /* Use the Poppins font for the heading with a fallback of sans-serif */
-  /* Add other styles as needed */
+  font-family: 'Poppins', sans-serif; 
 }
-
-.services .grid {
-  /* Add other styles as needed */
-}
-
-/* Add font-family to other elements as needed */
