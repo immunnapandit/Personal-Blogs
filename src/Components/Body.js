@@ -15,6 +15,10 @@ const Body = () => {
                         <span className="text-blue-500">I'm</span> Munna, a passionate<br />
                         <span className="typing">Software Engineer</span>
                     </h1>
+                    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={()=>window.open
+                        ("https://www.linkedin.com/in/immunnapandit/", "_blank")}>
+                        Linkedin Profile
+                    </button>
                 </div>
             </div>
             <div className="flex justify-center">
