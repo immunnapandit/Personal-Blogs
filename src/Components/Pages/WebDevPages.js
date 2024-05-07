@@ -15,13 +15,17 @@ const WebDevelopmentServices = () => {
 
                 <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                     <div className="bg-white rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300">
-                        <img src={webprograms1} alt="Custom Website Development" className="mb-4 rounded-full h-24 w-24 object-cover mx-auto" />
+                        <div className="aspect-w-1 aspect-h-1 mb-4">
+                            <img src={webprograms1} alt="Custom Website Development" className="h-full w-full object-cover" />
+                        </div>
                         <h3 className="text-xl font-bold text-gray-900 mb-2">Custom Website Development</h3>
                         <p className="text-gray-600">We build custom websites from scratch, tailored to your specific requirements and business goals. Our websites are designed to be visually appealing, user-friendly, and optimized for performance.</p>
                     </div>
 
                     <div className="bg-white rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300">
-                        <img src={webprograms} alt="Responsive Design" className="mb-4 rounded-full h-24 w-24 object-cover mx-auto" />
+                        <div className="aspect-w-1 aspect-h-1 mb-4">
+                            <img src={webprograms} alt="Responsive Design" className="h-full w-full object-cover" />
+                        </div>
                         <h3 className="text-xl font-bold text-gray-900 mb-2">Responsive Design</h3>
                         <p className="text-gray-600">In today's mobile-driven world, having a responsive website is crucial. We ensure that your website looks and functions flawlessly across all devices, from desktops to smartphones.</p>
                     </div>
