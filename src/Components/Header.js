@@ -29,7 +29,7 @@ const Header = () => {
                         )}
                     </button>
                 </div>
-                <div className={`fixed top-0 right-0 bottom-0 bg-white z-20 overflow-y-auto transition-transform transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`} style={{ width: '240px' }}>
+                <div className={`fixed top-0 right-0 bottom-0 bg-white z-20 overflow-y-auto transition-transform transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`} style={{ width: '240px', transitionDuration: '0.5s' }}>
                     <ul className="p-4">
                         <li className="mb-4">
                             <Link to="/" className="hover:text-blue-900" onClick={closeMenu}>Home</Link>
