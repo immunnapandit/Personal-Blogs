@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-
+import "../App.css"; // Added this line
 import BusinessConsultancy from '../assets/BusinessConusultancy.jpg';
 import Ecommerce from '../assets/Ecommerce.jpg';
 import GraphicDesign from '../assets/GraphicDesign.jpg';
@@ -53,8 +53,8 @@ const Services = () => {
     ];
 
     return (
-        <div className="services container mx-auto py-8 mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">Our Services</h2>
+        <div className="services container mx-auto py-8 mb-16 font-sans font-poppins"> {/* Added font-poppins class */}
+            <h2 className="text-3xl font-bold font-poppins text-center mb-8">Our Services</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
                 {services.map((element) => (
                     <Link key={element.id} to={element.path}>
