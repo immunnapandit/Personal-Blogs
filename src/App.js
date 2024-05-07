@@ -1,9 +1,8 @@
-import { createBrowserRouter,Outlet,RouterProvider} from 'react-router-dom';
-import ReactDOM from 'react-dom/client';
-import './App.css';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import Header from './Components/Header';
-import Error from './Components/Error';
 import About from './Components/About';
+import Error from './Components/Error';
 import Body from './Components/Body';
 import Footer from './Components/Footer';
 import Memories from './Components/Memories';
@@ -11,56 +10,22 @@ import Contact from './Components/Contact';
 import WebDevPages from './Components/Pages/WebDevPages';
 import GraphicDesign from './Components/Pages/GraphicDesign';
 
-
-const AppLayout = () =>{
+const App = () => {
   return (
     <div className="App">
-      <Header/>
-      <Outlet/>
-      <Footer/>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Body />} />
+        <Route path="/aboutus" element={<About />} />
+        <Route path="/contactus" element={<Contact />} />
+        <Route path="/memories" element={<Memories />} />
+        <Route path="/web-development" element={<WebDevPages />} />
+        <Route path="/graphic-design" element={<GraphicDesign />} />
+        <Route path="error" element={<Error/>}/>
+      </Routes>
+      <Footer />
     </div>
   );
 }
 
-const appRouter = createBrowserRouter([
-  {
-    path: "/",
-    element: <AppLayout/>,
-    children: [
-      {
-        path: "/",
-        element: <Body/>
-      }, 
-      {
-        path: "/aboutus",
-        element: <About/>
-      },
-      {
-        path: "/contactus",
-        element: <Contact/>
-      },
-      {
-        path: "/memories",
-        element: <Memories/>
-      },
-      {
-        path: "/web-development",
-        element: <WebDevPages/>
-      },
-      {
-        path: "/graphic-design",
-        element: <GraphicDesign/>
-      }
-      
-    ],
-    errorElement: <Error/>
-  }
-]);
-
-
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-
-root.render(<RouterProvider router={appRouter}/>);
-
-export default AppLayout;
+export default App;
