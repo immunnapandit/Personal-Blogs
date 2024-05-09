@@ -9,6 +9,7 @@ import GraphicDesign from '../assets/GraphicDesign.jpg';
 import Seo from '../assets/SEO.jpg';
 import ResearchDevelopment from '../assets/ResearchDevelopment.jpg';
 import WebDevelopment from '../assets/WebDevelopment.jpg';
+// import background from '../assets/backround.jpg';
 
 const Services = () => {
     const services = [
@@ -53,7 +54,7 @@ const Services = () => {
     ];
 
     return (
-        <div className="services container mx-auto py-8 mb-16 font-sans font-poppins"> {/* Added font-poppins class */}
+        <div className="services container mx-auto py-8 mb-16 font-sans font-poppins"> {/* style={{ backgroundImage: `url(${background})`, backgroundSize: 'cover', backgroundPosition: 'center' }} */}
             <h2 className="text-3xl font-bold font-poppins text-center mb-8">Our Services</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
                 {services.map((element) => (

@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes} from 'react-router-dom';
 import Header from './Components/Header';
 import Error from './Components/Error';
 import Body from './Components/Body';
@@ -30,7 +30,7 @@ const App = () => {
         <Route path="/memories" element={<Memories />} />
         <Route path="/web-development" element={<WebDevPages />} />
         <Route path="/graphic-design" element={<GraphicDesign />} />
-        <Route path="error" element={<Error />} />
+        <Route path="/error" element={<Error />} />
       </Routes>
       <Footer />
     </div>
