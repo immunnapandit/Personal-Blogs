@@ -9,7 +9,6 @@ import GraphicDesign from '../assets/GraphicDesign.jpg';
 import Seo from '../assets/SEO.jpg';
 import ResearchDevelopment from '../assets/ResearchDevelopment.jpg';
 import WebDevelopment from '../assets/WebDevelopment.jpg';
-// import background from '../assets/backround.jpg';
 
 const Services = () => {
     const services = [

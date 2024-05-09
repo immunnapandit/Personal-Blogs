@@ -27,7 +27,11 @@ const App = () => {
             <Contact />
             </Suspense>
         } />
-        <Route path="/memories" element={<Memories />} />
+        <Route path="/memories" element={
+        <Suspense fallback={<div><h1>Loading...</h1></div>}>
+            <Memories />
+            </Suspense>
+        } />
         <Route path="/web-development" element={<WebDevPages />} />
         <Route path="/graphic-design" element={<GraphicDesign />} />
         <Route path="/error" element={<Error />} />
