@@ -43,6 +43,9 @@ const Header = () => {
                         <li className="mb-4">
                             <Link to="/memories" className="hover:text-blue-900" onClick={closeMenu}>Memories</Link>
                         </li>
+                        <li className="mb-4">
+                            <a href="https://techwithmunna.com/"className="hover:text-blue-900" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Blogs</a>
+                        </li>
                     </ul>
                 </div>
                 {isMenuOpen && <div className="fixed top-0 left-0 right-0 bottom-0 bg-black opacity-50 z-10" onClick={closeMenu}></div>}
@@ -59,6 +62,9 @@ const Header = () => {
                         </li>
                         <li className="px-4">
                             <Link to="/memories" className="hover:text-blue-900">Memories</Link>
+                        </li>
+                        <li className="px-4">
+                            <a href="https://techwithmunna.com/" className="hover:text-blue-900" target="_blank" rel="noopener noreferrer">Blogs</a>
                         </li>
                     </ul>
                 </div>

@@ -7,6 +7,7 @@ import Footer from './Components/Footer';
 import Memories from './Components/Memories';
 import WebDevPages from './Components/Pages/WebDevPages';
 import GraphicDesign from './Components/Pages/GraphicDesign';
+import Blogs from './Components/Blogs';
 
 const About = lazy(() => import('./Components/About'));
 const Contact = lazy(() => import("./Components/Contact"));
@@ -34,6 +35,7 @@ const App = () => {
         } />
         <Route path="/web-development" element={<WebDevPages />} />
         <Route path="/graphic-design" element={<GraphicDesign />} />
+        <Route path="*" element={<Blogs />} />
         <Route path="/error" element={<Error />} />
       </Routes>
       <Footer />
