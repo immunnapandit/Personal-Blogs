@@ -1,6 +1,7 @@
 import React from "react";
 import munnaImage from "../assets/munna.jpg";
 import Services from "./Services";
+import Community from "./Community";
 
 const Body = () => {
     return (
@@ -21,12 +22,15 @@ const Body = () => {
                     </button>
                 </div>
             </div>
+            
             <div className="flex justify-center">
                 <Services />
+            </div>
+            <div className="flex justify-center">
+                <Community />
             </div>
         </div>
     );
 }
 
 export default Body;
-//Munna

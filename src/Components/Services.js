@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 import "../App.css";
 import BusinessConsultancy from '../assets/BusinessConusultancy.jpg';
 import Ecommerce from '../assets/Ecommerce.jpg';
@@ -60,9 +58,8 @@ const Services = () => {
                     <Link key={element.id} to={element.path}>
                         <div className="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center hover:shadow-xl transition duration-300">
                             <div className="aspect-w-1 aspect-h-1 mb-4">
-                                <LazyLoadImage
+                                <img
                                     alt={element.title}
-                                    effect="blur"
                                     src={element.url}
                                     className="h-full w-full object-cover"
                                 />

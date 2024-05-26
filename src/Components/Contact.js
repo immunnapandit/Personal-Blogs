@@ -28,9 +28,15 @@ const Contact = () => {
                 },
                 body: JSON.stringify(formData),
             });
+    
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+    
             const data = await response.json();
             console.log(data);
             setSubmitStatus('success');
+    
             // Reset the form after successful submission
             setFormData({
                 name: "",
@@ -43,6 +49,8 @@ const Contact = () => {
             setSubmitStatus('error');
         }
     };
+    
+    
 
     return (
         <div className="max-w-screen-xl mx-auto py-20 flex flex-col md:flex-row items-center">
