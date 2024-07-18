@@ -1,32 +1,33 @@
 import React from "react";
-import munnaImage from "../assets/munna.jpg";
+import BodyImage from "../assets/bodyimage1.jpg";
+import OverlayImage from "../assets/munna.jpg"; // Import the new image
 import Services from "./Services";
 import Community from "./Community";
+import About from "./About";
 
 const Body = () => {
     return (
         <div className="flex flex-col">
-            <div className="flex flex-col md:flex-row items-center py-10 md:py-18 m-4 md:m-20">
-                <div className="max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg md:mr-10 mb-4 md:mb-0">
-                    <img src={munnaImage} alt="munnaimage" className="w-full rounded-full" />
+            <div className="relative w-full h-screen overflow-hidden">
+                <img alt="Body" src={BodyImage} className="w-full h-full object-cover" />
+                <div className="absolute inset-0 flex items-center justify-start mx-4 md:mx-16 lg:mx-32 xl:mx-72 p-4">
+                    <span className="text-white text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-left font-serif">
+                        Success is a <br />
+                        progressive <br />
+                        idea worth <br />
+                        pursuing
+                    </span>
                 </div>
-                <div className="text-center md:text-left">
-                    <h1 className="nij-manrope-bold text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-2 md:mb-4 lg:mb-6 px-4 md:px-0">
-                        Welcome to <span style={{ color: '#ff0000' }}>Tech</span>with<span style={{ color: '#3182ce' }}>munna</span><br />
-                        <span className="text-blue-500">I'm</span> Munna, a passionate<br />
-                        <span className="typing">Software Engineer</span>
-                    </h1>
-                    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={()=>window.open
-                        ("https://www.linkedin.com/in/immunnapandit/", "_blank")}>
-                        Linkedin Profile
-                    </button>
-                </div>
+                <img alt="Overlay" src={OverlayImage} className="absolute bottom-0 right-0 w-20 h-20 md:w-28 md:h-28 lg:w-36 lg:h-36 xl:w-48 xl:h-48 object-cover m-4" />
             </div>
-            
-            <div className="flex justify-center">
+            <div className="flex justify-center px-4 md:px-8 lg:px-16 xl:px-32">
+                <About/>
+            </div>
+
+            <div className="flex justify-center px-4 md:px-8 lg:px-16 xl:px-32">
                 <Services />
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center px-4 md:px-8 lg:px-16 xl:px-32">
                 <Community />
             </div>
         </div>
