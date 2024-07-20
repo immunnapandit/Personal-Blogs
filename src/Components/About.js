@@ -1,12 +1,12 @@
 import React from 'react';
-import MunnaImage from '../assets/about us image 1.jpeg'; // Ensure you have an image in the specified path
+import MunnaImage from '../assets/about us image 1.jpeg';
 
 const About = () => {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-100 via-white to-blue-100 py-12 my-20">
             <div className="max-w-6xl mx-auto bg-white shadow-2xl rounded-lg overflow-hidden transform transition-all duration-500 hover:scale-105">
                 <div className="md:flex">
-                    <div className="md:w-1/2 h-1/4"> {/* Adjusted height for consistent image size */}
+                    <div className="md:w-1/2 h-1/4">
                         <img className="object-cover w-full h-full" src={MunnaImage} alt="Munna Kumar" />
                     </div>
                     <div className="p-8 md:w-1/2">

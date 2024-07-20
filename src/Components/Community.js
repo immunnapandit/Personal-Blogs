@@ -22,7 +22,7 @@ const Community = () => {
               <div className="z-30 group transition-all ease-in-out duration-200 cursor-pointer hover:bg-red-600 flex flex-col 
               justify-center items-center rounded-xl bg-white dark:bg-[#3d3d3d73] dark:shadow-none md:shadow-[0px_40px_80px_0px_#FBE4E0] 
               shadow-[0px_10px_20px_0px_#FBE4E0] md:px-9 md:py-12 p-5">
-                <p className="md:text-[50px] text-[28px] xs:text-[26px] font-bold group-hover:text-white">10K+</p>
+                <p className="md:text-[50px] text-[28px] xs:text-[26px] font-bold group-hover:text-white">1K+</p>
                 <div className="flex gap-x-2 items-center">
                   <span className="group-hover:text-white text-[12px]">YouTube</span>
                   <svg className="fill-[#FF0000] dark:group-hover:fill-[#FF0000] group-hover:fill-white md:w-[24px] md:h-[20px] w-[14px] h-[10px]" 
@@ -50,7 +50,7 @@ const Community = () => {
               <div className="z-30 group transition-all ease-in-out duration-200 cursor-pointer hover:bg-blue-600 flex flex-col 
               justify-center items-center rounded-xl bg-white dark:bg-[#3d3d3d73] dark:shadow-none md:shadow-[0px_40px_80px_0px_#FBE4E0] 
               shadow-[0px_10px_20px_0px_#FBE4E0] md:px-9 md:py-12 p-5">
-                <p className="md:text-[50px] text-[28px] xs:text-[26px] font-bold group-hover:text-white">5K+</p>
+                <p className="md:text-[50px] text-[28px] xs:text-[26px] font-bold group-hover:text-white">8K+</p>
                 <div className="flex gap-x-2 items-center">
                   <span className="group-hover:text-white text-[12px]">LinkedIn</span>
                   <svg className="fill-[#0077B5] dark:group-hover:fill-[#0077B5] group-hover:fill-white md:w-[24px] md:h-[20px] w-[14px] h-[10px]" 
@@ -61,31 +61,32 @@ const Community = () => {
               </div>
             </div>
           </a>
-          {/* Twitter */}
-          <a
-            aria-label="Twitter: https://twitter.com/immunnapandit"
-            className="bg-gradient-to-tl from-[#FFCDC7] via-[#FFF5F3] rounded-[18px] to-[#FFFBFA] relative p-[2px] md:w-[287px] 
-            md:h-[270px] dark:bg-gradient-to-t dark:from-[#3333331a] dark:to-[#4d4d4d23] hover:dark:border-[#FCEDEF] hover:dark:border"
-            href="https://twitter.com/immunnapandit"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className="bg-gradient-to-tl dark:bg-gradient-to-t dark:from-[#3333331a] dark:to-[#4d4d4d23] from-[#FFF8F7] via-[#FFF5F3] 
-            rounded-[16px] to-[#FFFBFA] relative md:w-[283px] md:h-[266px] flex justify-center items-center py-8">
-              <div className="z-30 group transition-all ease-in-out duration-200 cursor-pointer hover:bg-blue-400 flex flex-col 
-              justify-center items-center rounded-xl bg-white dark:bg-[#3d3d3d73] dark:shadow-none md:shadow-[0px_40px_80px_0px_#FBE4E0] 
-              shadow-[0px_10px_20px_0px_#FBE4E0] md:px-9 md:py-12 p-5">
-                <p className="md:text-[50px] text-[28px] xs:text-[26px] font-bold group-hover:text-white">8K+</p>
-                <div className="flex gap-x-2 items-center">
-                  <span className="group-hover:text-white text-[12px]">Twitter</span>
-                  <svg className="fill-[#1DA1F2] dark:group-hover:fill-[#1DA1F2] group-hover:fill-white md:w-[24px] md:h-[20px] w-[14px] h-[10px]" 
-                  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M24 4.56c-.88.38-1.82.63-2.82.75a4.92 4.92 0 0 0 2.15-2.7 9.72 9.72 0 0 1-3.1 1.18A4.85 4.85 0 0 0 16.86 3c-2.68 0-4.86 2.18-4.86 4.87 0 .38.04.75.12 1.11-4.04-.2-7.62-2.14-10-5.08a4.92 4.92 0 0 0-.65 2.44 4.87 4.87 0 0 0 2.17 4.05 4.84 4.84 0 0 1-2.2-.61v.06c0 2.3 1.64 4.23 3.8 4.67a4.84 4.84 0 0 1-2.2.08c.62 1.92 2.42 3.32 4.55 3.36a9.72 9.72 0 0 1-6.02 2.08c-.39 0-.77-.02-1.15-.07a13.73 13.73 0 0 0 7.44 2.18c8.93 0 13.82-7.4 13.82-13.82 0-.21 0-.43-.02-.64A9.9 9.9 0 0 0 24 4.56z"/>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </a>
+          {/* X Account */}
+<a
+  aria-label="X: https://x.com/immunnapandit"
+  className="bg-gradient-to-tl from-[#FFCDC7] via-[#FFF5F3] rounded-[18px] to-[#FFFBFA] relative p-[2px] md:w-[287px] 
+  md:h-[270px] dark:bg-gradient-to-t dark:from-[#3333331a] dark:to-[#4d4d4d23] hover:dark:border-[#FCEDEF] hover:dark:border"
+  href="https://x.com/immunnapandit"
+  target="_blank"
+  rel="noreferrer"
+>
+  <div className="bg-gradient-to-tl dark:bg-gradient-to-t dark:from-[#3333331a] dark:to-[#4d4d4d23] from-[#FFF8F7] via-[#FFF5F3] 
+  rounded-[16px] to-[#FFFBFA] relative md:w-[283px] md:h-[266px] flex justify-center items-center py-8">
+    <div className="z-30 group transition-all ease-in-out duration-200 cursor-pointer hover:bg-blue-400 flex flex-col 
+    justify-center items-center rounded-xl bg-white dark:bg-[#3d3d3d73] dark:shadow-none md:shadow-[0px_40px_80px_0px_#FBE4E0] 
+    shadow-[0px_10px_20px_0px_#FBE4E0] md:px-9 md:py-12 p-5">
+      <p className="md:text-[50px] text-[28px] xs:text-[26px] font-bold group-hover:text-white">1K+</p>
+      <div className="flex gap-x-2 items-center">
+        <span className="group-hover:text-white text-[12px]">X</span>
+        <svg className="fill-[#1DA1F2] dark:group-hover:fill-[#1DA1F2] group-hover:fill-white md:w-[24px] md:h-[20px] w-[14px] h-[10px]" 
+        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 4.56c-.88.38-1.82.63-2.82.75a4.92 4.92 0 0 0 2.15-2.7 9.72 9.72 0 0 1-3.1 1.18A4.85 4.85 0 0 0 16.86 3c-2.68 0-4.86 2.18-4.86 4.87 0 .38.04.75.12 1.11-4.04-.2-7.62-2.14-10-5.08a4.92 4.92 0 0 0-.65 2.44 4.87 4.87 0 0 0 2.17 4.05 4.84 4.84 0 0 1-2.2-.61v.06c0 2.3 1.64 4.23 3.8 4.67a4.84 4.84 0 0 1-2.2.08c.62 1.92 2.42 3.32 4.55 3.36a9.72 9.72 0 0 1-6.02 2.08c-.39 0-.77-.02-1.15-.07a13.73 13.73 0 0 0 7.44 2.18c8.93 0 13.82-7.4 13.82-13.82 0-.21 0-.43-.02-.64A9.9 9.9 0 0 0 24 4.56z"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</a>
+
           {/* Instagram */}
           <a
             aria-label="Instagram: https://www.instagram.com/immunnapandit"
@@ -100,7 +101,7 @@ const Community = () => {
               <div className="z-30 group transition-all ease-in-out duration-200 cursor-pointer hover:bg-pink-600 flex flex-col 
               justify-center items-center rounded-xl bg-white dark:bg-[#3d3d3d73] dark:shadow-none md:shadow-[0px_40px_80px_0px_#FBE4E0] 
               shadow-[0px_10px_20px_0px_#FBE4E0] md:px-9 md:py-12 p-5">
-                <p className="md:text-[50px] text-[28px] xs:text-[26px] font-bold group-hover:text-white">7K+</p>
+                <p className="md:text-[50px] text-[28px] xs:text-[26px] font-bold group-hover:text-white">1K+</p>
                 <div className="flex gap-x-2 items-center">
                   <span className="group-hover:text-white text-[12px]">Instagram</span>
                   <svg className="fill-[#E4405F] dark:group-hover:fill-[#E4405F] group-hover:fill-white md:w-[24px] md:h-[20px] w-[14px] h-[10px]" 
